@@ -2,7 +2,7 @@ const agendar = document.getElementById("agendar");
 const nombrePedido = document.getElementById("nombrePedido");
 const costoPedido = document.getElementById("costo");
 const fecha = document.getElementById("fecha");
-const incompleto = document.getElementById("incompleto"); // Obtén el contenedor incompleto
+const incompleto = document.getElementById("incompleto"); 
 const completo= document.getElementById("completos");
 const imagenGatito = document.getElementById('gatito');
 const miModal = document.getElementById('modalBoton');
@@ -54,7 +54,7 @@ error.style.display="none";
   let nombre = nombrePedido.value;
   let fechaLimite = fecha.value;
   let costo = costoPedido.value;
-if(nombre.length!== 0 && fechaLimite !== null){
+if(nombre.length!== 0 && fechaLimite !== null&& costo>0){
   listaIncompleto.push("Pedido : "+nombre + " Fecha de Entrega: " + fechaLimite + " Precio :" + costo)
   listaCosto.push(costo);
   

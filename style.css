@@ -4,8 +4,10 @@ body {
   color: rgb(31, 60, 149);
   text-align: center;
     background-image: url(https://i.pinimg.com/564x/be/42/7b/be427bd6dbe878f902c095609b1b0a5b.jpg); 
+    
     background-size: cover;
     background-repeat: no-repeat; 
+    
 }
 
 #contenedor {
@@ -75,19 +77,19 @@ h1 {
 p1 {
   text-align: center;
   font-family: fantasy;
-  font-size: 30px; /* Ajusta el tamaño según tus preferencias */
+  font-size: 30px; 
 }
 #nombrePedido {
-  width: 400px; /* Ajusta el ancho según tus preferencias */
-  height: 100px; /* Ajusta la altura según tus preferencias */
-  opacity: 0.9; /* Ajusta la opacidad, donde 1 es completamente visible y 0 es completamente transparente */
-  resize: none; /* Evita que el usuario pueda redimensionar el textarea */
-  color: #000; /* Establece el color del texto en negro oscuro (#000) */
+  width: 400px; 
+  height: 100px; 
+  opacity: 0.9; 
+  resize: none; 
+  color:  #000; 
 }
 #costo {
-  width: 150px; /* Ajusta el ancho según tus preferencias */
-  height: 50px; /* Ajusta la altura según tus preferencias */
-  opacity: 0.8; /* Ajusta la opacidad, donde 1 es completamente visible y 0 es completamente transparente */
+  width: 150px; 
+  height: 50px;
+  opacity: 0.8; 
 }
 .izquierda {
   position: absolute;
@@ -109,20 +111,22 @@ strong {
 }
 
 .contenido-con-borde {
-  border: 1px solid #000; /* Agrega un borde de 1 píxel de grosor en color negro alrededor del contenido */
+  border: 1px solid #000; 
   padding: 10px; /* Agrega un espacio interno dentro del borde */
-  display: inline-block; /* Hace que el elemento se comporte como un bloque en línea */
+  display: inline-block; 
 }
 
 p2 {
   text-align: center;
   font-family: fantasy;
-  font-size: 24px; /* Ajusta el tamaño según tus preferencias */
+  font-size: 24px; 
 }
 
 #error{
   text-align: center;
   justify-content: center;
+  color: red;
+  font-size: 20px;
   
 }
 .pedido-incompleto {
@@ -145,7 +149,7 @@ p2 {
   display: inline-block;
   margin-left: 10px;
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 13px;
   vertical-align: middle; 
   border-radius: 10px;
   color: #2e2121;
@@ -161,4 +165,12 @@ p2 {
   vertical-align: middle; 
   border-radius: 10px;
   color: #2e2121;
+}
+#nuevoPedido{
+  background-color: #d350d3;
+  font-weight: 3px;
+    color: #252121; 
+  padding: 10px 20px; 
+  border-radius: 5px;
+  font-size: 16px; 
 }
