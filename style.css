@@ -1,0 +1,176 @@
+body {
+  background-color: aliceblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(31, 60, 149);
+  text-align: center;
+    background-image: url(https://i.pinimg.com/564x/be/42/7b/be427bd6dbe878f902c095609b1b0a5b.jpg); 
+    
+    background-size: cover;
+    background-repeat: no-repeat; 
+    
+}
+
+#contenedor {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  margin: 15px;
+}
+
+#informacion,
+#estados {
+  display: flex;
+  justify-content: left;
+  margin: 5px;
+}
+
+#informacion input,
+#informacion button,
+#filtro input,
+#filtro button {
+  margin: 10px; /* añadimos espacio entre los elementos */
+}
+
+#estados {
+  justify-content: space-between;
+  text-align: center;
+  width: 100%; /* Asegura que los elementos ocupen todo el ancho disponible */
+}
+#incompleto,
+#completos {
+  flex: 1;
+  padding: 10px;
+  width: 500px;
+  height: 400px;
+ text-align: left; 
+  border-radius: 10px;
+  overflow-y: auto; 
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #f5f5f5;
+  margin: 10px; 
+}
+
+#incompleto h2,
+#completos h2 {
+  margin: 5px;
+  padding: 5px;
+  background-color: #e1e1e1;
+  text-align: center; /* Centramos el `texto  en los títulos */
+}
+
+
+#pedido-incompleto,
+#pedido-completo{
+    size: 5px;
+    justify-content: space-between;
+  text-align: center;
+    font-size: 10px;
+    
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: fantasy;
+}
+p1 {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 30px; 
+}
+#nombrePedido {
+  width: 400px; 
+  height: 100px; 
+  opacity: 0.9; 
+  resize: none; 
+  color:  #000; 
+}
+#costo {
+  width: 150px; 
+  height: 50px;
+  opacity: 0.8; 
+}
+.izquierda {
+  position: absolute;
+  left: 250px;
+  top: 98px;
+}
+
+.derecha {
+  position: absolute;
+  right: 250px;
+  top: 98px;
+}
+strong {
+  font-weight: bold;
+}
+#ganancia {
+  text-align: right; /* Alinea el contenido a la derecha */
+  margin-right: 10px; /* Agrega margen derecho para separarlo del borde */
+}
+
+.contenido-con-borde {
+  border: 1px solid #000; 
+  padding: 10px; /* Agrega un espacio interno dentro del borde */
+  display: inline-block; 
+}
+
+p2 {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 24px; 
+}
+
+#error{
+  text-align: center;
+  justify-content: center;
+  color: red;
+  font-size: 20px;
+  
+}
+.pedido-incompleto {
+ 
+  align-items: center; 
+}
+
+.pedido-incompleto p {
+  margin-right: 15px; 
+}
+
+#p{
+  font-size: 15px;
+  text-align: center;
+
+}
+
+.pedido-incompleto p,
+.pedido-completo p{
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 13px;
+  vertical-align: middle; 
+  border-radius: 10px;
+  color: #2e2121;
+  font-size: 20px;
+}
+
+
+.pedido-incompleto button{
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 3px;
+  font-size: 15px;
+  vertical-align: middle; 
+  border-radius: 10px;
+  color: #2e2121;
+}
+#nuevoPedido{
+  background-color: #d350d3;
+  font-weight: 3px;
+    color: #252121; 
+  padding: 10px 20px; 
+  border-radius: 5px;
+  font-size: 16px; 
+}

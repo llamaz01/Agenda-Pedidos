@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Agenda de pedidos</title>
+
+    <!-- Enlaza al archivo CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Enlaza al archivo JavaScript de Bootstrap (opcional, solo si necesitas componentes interactivos de Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="contenedor">
+        <div>
+            <h1>Agenda de Pedidos</h1>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Gatitos para ser feliz</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Contenido del modal -->
+                        <img id="gatito" class="img-fluid">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- agregar -->
+        <!-- Botón para abrir el modal -->
+        <div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="button" id="nuevoPedido" class="btn btn-success" data-bs-toggle="modal"
+                    data-bs-target="#modalAgregar">Nuevo Pedido</button>
+                <button id="modalBoton" type="button" class="btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#miModal"> Gatitos</button>
+            </div>
+        </div>
+        <div>
+            <p1 class="izquierda">Pendientes</p1>
+            <p1 class="derecha">Completos</p1>
+        </div>
+        <!-- Modal para Nuevo Pedido -->
+        <div class="modal fade" id="modalAgregar" tabindex="-1" aria-labelledby="modalAgregarLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalAgregarLabel">Nuevo Pedido</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombrePedido" class="form-label">Escribe tu pedido aquí</label>
+                                <textarea class="form-control" id="nombrePedido" rows="3"
+                                    placeholder="Escribe tu pedido aquí"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="costo" class="form-label">Costo (Gs)</label>
+                                <input type="number" class="form-control" id="costo" placeholder="Gs">
+                            </div>
+                            <div class="mb-3">
+                                <label for="fecha" class="form-label">Fecha de entrega</label>
+                                <input type="date" class="form-control" id="fecha" value="2023-09-14" min="2023-09-01"
+                                    max="2024-09-01">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button id="agendar" type="button" class="btn btn-success">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="error" style="display: none;">
+            <p id="error">Debe completar todos los campos!!</p>
+        </div>
+
+        <div id="estados">
+            <div id="incompleto">
+
+            </div>
+
+            <div id="completos">
+
+            </div>
+        </div>
+        <div id="ganancia">
+            <div class="contenido-con-borde">
+                <p2>Ganancia Total: </p2>
+                <p2 id="total"></p2>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
